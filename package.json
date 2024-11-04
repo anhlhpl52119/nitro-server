@@ -6,7 +6,7 @@
   "scripts": {
     "build": "nitro build",
     "dev": "nitro dev",
-    "preview": "node .output/server/index.mjs"
+    "preview": "nitro preview"
   },
   "keywords": [],
   "author": "",
