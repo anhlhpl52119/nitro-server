@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const deleteKey = await getRouterParam(event, 'key');
+  const deleteKey = getRouterParam(event, 'key');
   const current: any = await useStorage('myFileSystem').getItem('foo.json')
   delete current[deleteKey];
   await useStorage('myFileSystem').setItem('foo.json', current)
